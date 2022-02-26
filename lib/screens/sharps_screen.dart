@@ -14,6 +14,8 @@ class AboutDispProcess extends StatelessWidget {
           title: Text('AboutDispProcess'),
         ),
         body: Column(
-            children: <Widget>[Container(height: 750, child: Text('hello'))]));
+            children: <Widget>[
+              Image.asset('assets/images/process.png')
+            ]));
   }
 }

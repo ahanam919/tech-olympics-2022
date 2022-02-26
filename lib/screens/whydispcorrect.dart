@@ -15,6 +15,8 @@ class WhyDispCorrect extends StatelessWidget {
           title: Text('Prescription Medicines'),
         ),
         body: Column(
-            children: <Widget>[Container(height: 750, child: Text('hello'))]));
+            children: <Widget>[
+              Image.asset('assets/images/MedDisp.png'),
+              Container(height: 750, child: Text('hello'))]));
   }
 }

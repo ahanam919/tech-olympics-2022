@@ -26,10 +26,10 @@ class CustomHomeScreen extends StatelessWidget {
                             builder: (context) => WhyDispCorrect()));
                   },
                   child: Text(
-                    'why you should dispose correctly ',
-                    style: TextStyle(fontSize: 20),
+                    'Why You Should Dispose Correctly',
+                    style: TextStyle(fontSize: 40),
                   )),
-              SizedBox(height: 50, width: 50),
+              SizedBox(height: 50, width: 40),
               ElevatedButton(
                   onPressed: () {
                     Navigator.push(
@@ -38,8 +38,8 @@ class CustomHomeScreen extends StatelessWidget {
                             builder: (context) => AboutDispProcess()));
                   },
                   child: Text(
-                    'about disposal process',
-                    style: TextStyle(fontSize: 20),
+                    'About The Disposal Process',
+                    style: TextStyle(fontSize: 40),
                   )),
               SizedBox(height: 50, width: 50),
               ElevatedButton(
@@ -48,8 +48,8 @@ class CustomHomeScreen extends StatelessWidget {
                         MaterialPageRoute(builder: (context) => Otc()));
                   },
                   child: Text(
-                    'types of meds',
-                    style: TextStyle(fontSize: 20),
+                    'Different Types of Medications',
+                    style: TextStyle(fontSize: 40),
                   )),
             ])));
   }

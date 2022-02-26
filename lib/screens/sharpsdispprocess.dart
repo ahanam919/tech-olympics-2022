@@ -10,6 +10,16 @@ class SharpsDispP extends StatefulWidget {
 class _SharpsDispPState extends State<SharpsDispP> {
   @override
   Widget build(BuildContext context) {
-    return Container();
-  }
+    return Scaffold(
+        appBar: AppBar(
+          title: Text('About the Disposal Process'),
+        ),
+        body: Column(
+            children: <Widget>[
+              Image.asset('assets/images/getSharpsReady.png')
+  
+            ]
+        )
+    );
+}
 }

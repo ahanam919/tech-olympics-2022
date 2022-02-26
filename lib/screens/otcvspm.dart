@@ -10,6 +10,13 @@ class OTCvsPM extends StatefulWidget {
 class _OTCvsPMState extends State<OTCvsPM> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+     return Scaffold(
+        appBar: AppBar(
+          title: Text('AboutDispProcess'),
+        ),
+        body: Column(
+            children: <Widget>[
+              Image.asset('assets/images/OTCvsPMs.png')
+            ]));
   }
 }
