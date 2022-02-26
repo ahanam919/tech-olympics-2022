@@ -6,7 +6,7 @@ import '/screens/generaltips_screen.dart';
 import './screens/home_screen.dart';
 import './screens/quiz_screen.dart';
 import './screens/customhome_screen.dart';
-import './screens/prescribedmedicines_screen.dart';
+import 'screens/whydispcorrect.dart';
 import './screens/otc_screen.dart';
 import './screens/sharps_screen.dart';
 import './screens/findpharm_screen.dart';
@@ -37,8 +37,8 @@ class _MyAppState extends State<MyApp> {
         GeneralTips.routeName: (ctx) => GeneralTips(),
         CustomHomeScreen.routeName: (ctx) => CustomHomeScreen(),
         Otc.routeName: (ctx) => Otc(),
-        Prescribed.routeName: (ctx) => Prescribed(),
-        Sharps.routeName: (ctx) => Sharps(),
+        WhyDispCorrect.routeName: (ctx) => WhyDispCorrect(),
+        AboutDispProcess.routeName: (ctx) => AboutDispProcess(),
         FindPharm.routeName: (ctx) => FindPharm(),
         Quiz.routeName: (ctx) => Quiz()
       },

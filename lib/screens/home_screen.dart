@@ -56,26 +56,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     'Learn',
                     style: TextStyle(fontSize: 30),
                   )),
-              SizedBox(height: 30, width: 40),
-              ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => NottoDo()));
-                  },
-                  child: Text(
-                    'No-Nos',
-                    style: TextStyle(fontSize: 30),
-                  )),
-              SizedBox(height: 30, width: 40),
-              ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => GeneralTips()));
-                  },
-                  child: Text(
-                    'General Tips and Tricks',
-                    style: TextStyle(fontSize: 30),
-                  )),
             ])));
   }
 }

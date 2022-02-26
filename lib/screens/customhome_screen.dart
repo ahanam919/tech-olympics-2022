@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import './prescribedmedicines_screen.dart';
+import 'whydispcorrect.dart';
 import './otc_screen.dart';
 import './sharps_screen.dart';
 
-import 'prescribedmedicines_screen.dart';
+import 'whydispcorrect.dart';
 
 class CustomHomeScreen extends StatelessWidget {
   static const routeName = '/customhome';
@@ -11,7 +11,7 @@ class CustomHomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('More Information about various types of items'),
+          title: Text('Learn!'),
         ),
         body: Center(
             child: Column(
@@ -20,21 +20,25 @@ class CustomHomeScreen extends StatelessWidget {
                 children: <Widget>[
               ElevatedButton(
                   onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Prescribed()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => WhyDispCorrect()));
                   },
                   child: Text(
-                    'Prescribed Medicines',
+                    'why you should dispose correctly ',
                     style: TextStyle(fontSize: 20),
                   )),
               SizedBox(height: 50, width: 50),
               ElevatedButton(
                   onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Sharps()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => AboutDispProcess()));
                   },
                   child: Text(
-                    'Sharps(needles, syringes, lancets, etc.)',
+                    'about disposal process',
                     style: TextStyle(fontSize: 20),
                   )),
               SizedBox(height: 50, width: 50),
@@ -44,7 +48,7 @@ class CustomHomeScreen extends StatelessWidget {
                         MaterialPageRoute(builder: (context) => Otc()));
                   },
                   child: Text(
-                    'Over the Counter Medications',
+                    'types of meds',
                     style: TextStyle(fontSize: 20),
                   )),
             ])));

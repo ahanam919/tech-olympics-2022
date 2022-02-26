@@ -47,8 +47,8 @@ class MainDrawer extends StatelessWidget {
             height: 20,
           ),
           buildListTile('Home', Icons.home, () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => CustomHomeScreen()));
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => HomeScreen()));
           }),
           buildListTile('Disposal Finder', Icons.search, () {
             Navigator.push(

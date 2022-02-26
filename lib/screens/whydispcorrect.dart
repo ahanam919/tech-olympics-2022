@@ -4,14 +4,15 @@ import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-class AboutDispProcess extends StatelessWidget {
-  static const routeName = '/nottodo';
+class WhyDispCorrect extends StatelessWidget {
+  static const routeName = '/WhyDispCorrect';
+  late WebViewController _controller;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('AboutDispProcess'),
+          title: Text('Prescription Medicines'),
         ),
         body: Column(
             children: <Widget>[Container(height: 750, child: Text('hello'))]));
