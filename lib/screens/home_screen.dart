@@ -27,22 +27,24 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("SafeMed (Home)"),
+          title: Text("SafeMed"),
         ),
         drawer: MainDrawer(),
-        body: Center(
+        body:Center(
             child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.center,
+                //crossAxisAlignment: CrossAxisAlignment.start,
+                //rmainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
+                   Image.asset('assets/images/SafeMed.png'), 
+                   new Padding(padding: const EdgeInsets.symmetric(vertical: 20.0)),
               ElevatedButton(
                   onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => FindPharm()));
                   },
                   child: Text(
-                    'Find Disposal Locations',
-                    style: TextStyle(fontSize: 30),
+                    'Find Disposal\nLocations',
+                    style: TextStyle(fontSize: 40),
                   )),
               SizedBox(height: 30, width: 40),
               ElevatedButton(
@@ -54,28 +56,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   },
                   child: Text(
                     'Learn',
-                    style: TextStyle(fontSize: 30),
+                    style: TextStyle(fontSize: 40),
                   )),
-              SizedBox(height: 30, width: 40),
-              ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => NottoDo()));
-                  },
-                  child: Text(
-                    'No-Nos',
-                    style: TextStyle(fontSize: 30),
-                  )),
-              SizedBox(height: 30, width: 40),
-              ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => GeneralTips()));
-                  },
-                  child: Text(
-                    'General Tips and Tricks',
-                    style: TextStyle(fontSize: 30),
-                  )),
+              SizedBox(height: 50, width: 40)
             ])));
   }
 }
