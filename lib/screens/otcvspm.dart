@@ -12,7 +12,7 @@ class _OTCvsPMState extends State<OTCvsPM> {
   Widget build(BuildContext context) {
      return Scaffold(
         appBar: AppBar(
-          title: Text('AboutDispProcess'),
+          title: Text('About The Disposal Process'),
         ),
         body: Column(
             children: <Widget>[

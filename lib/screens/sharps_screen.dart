@@ -11,7 +11,7 @@ class AboutDispProcess extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('AboutDispProcess'),
+          title: Text('About The Disposal Process'),
         ),
         body: Column(
             children: <Widget>[

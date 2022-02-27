@@ -30,7 +30,7 @@ class Otc extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("SafeMed"),
+          title: Text("Different Types of Medications"),
         ),
         body: Center(
             child: Column(
@@ -43,8 +43,8 @@ class Otc extends StatelessWidget {
                         MaterialPageRoute(builder: (context) => SharpsDispP()));
                   },
                   child: Text(
-                    'shaprs disp process',
-                    style: TextStyle(fontSize: 30),
+                    'Sharps Disposal Process',
+                    style: TextStyle(fontSize: 50),
                   )),
               SizedBox(height: 30, width: 40),
               ElevatedButton(
@@ -53,8 +53,8 @@ class Otc extends StatelessWidget {
                         MaterialPageRoute(builder: (context) => OTCvsPM()));
                   },
                   child: Text(
-                    'otc vs pm',
-                    style: TextStyle(fontSize: 30),
+                    'Over the Counter vs. Prescribed Meds',
+                    style: TextStyle(fontSize: 50),
                   )),
             ])));
   }

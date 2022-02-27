@@ -12,7 +12,7 @@ class _SharpsDispPState extends State<SharpsDispP> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('About the Disposal Process'),
+          title: Text('The Disposal Process of Sharps'),
         ),
         body: Column(
             children: <Widget>[

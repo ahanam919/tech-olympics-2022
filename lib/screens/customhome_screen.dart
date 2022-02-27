@@ -18,6 +18,7 @@ class CustomHomeScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
+                  Image.asset('assets/images/Learn.png'),
               ElevatedButton(
                   onPressed: () {
                     Navigator.push(
@@ -27,9 +28,9 @@ class CustomHomeScreen extends StatelessWidget {
                   },
                   child: Text(
                     'Why You Should Dispose Correctly',
-                    style: TextStyle(fontSize: 40),
+                    style: TextStyle(fontSize: 30),
                   )),
-              SizedBox(height: 50, width: 40),
+              SizedBox(height: 20, width: 40),
               ElevatedButton(
                   onPressed: () {
                     Navigator.push(
@@ -39,9 +40,9 @@ class CustomHomeScreen extends StatelessWidget {
                   },
                   child: Text(
                     'About The Disposal Process',
-                    style: TextStyle(fontSize: 40),
+                    style: TextStyle(fontSize: 30),
                   )),
-              SizedBox(height: 50, width: 50),
+              SizedBox(height: 20, width: 50),
               ElevatedButton(
                   onPressed: () {
                     Navigator.push(context,
@@ -49,7 +50,7 @@ class CustomHomeScreen extends StatelessWidget {
                   },
                   child: Text(
                     'Different Types of Medications',
-                    style: TextStyle(fontSize: 40),
+                    style: TextStyle(fontSize: 30),
                   )),
             ])));
   }

@@ -12,7 +12,7 @@ class WhyDispCorrect extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Prescription Medicines'),
+          title: Text('Why You Should Dispose Correctly'),
         ),
         body: Column(
             children: <Widget>[
