@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '/screens/nottodo_screen.dart';
-import '/screens/generaltips_screen.dart';
-
 import './screens/home_screen.dart';
-import './screens/quiz_screen.dart';
+import 'screens/quiz_screen_sharps.dart';
 import './screens/customhome_screen.dart';
 import 'screens/whydispcorrect.dart';
 import 'screens/typesofmeds.dart';
@@ -33,14 +30,11 @@ class _MyAppState extends State<MyApp> {
       routes: {
         '/': (ctx) =>
             HomeScreen(), //replace with HomeScreen() after firstintro is coded
-        NottoDo.routeName: (ctx) => NottoDo(),
-        GeneralTips.routeName: (ctx) => GeneralTips(),
         CustomHomeScreen.routeName: (ctx) => CustomHomeScreen(),
 
         WhyDispCorrect.routeName: (ctx) => WhyDispCorrect(),
         AboutDispProcess.routeName: (ctx) => AboutDispProcess(),
-        FindPharm.routeName: (ctx) => FindPharm(),
-        Quiz.routeName: (ctx) => Quiz()
+        FindPharm.routeName: (ctx) => FindPharm()
       },
       onGenerateRoute: (settings) {
         print(settings.arguments);

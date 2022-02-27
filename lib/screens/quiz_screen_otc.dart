@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_complete_guide/widgets/question.dart';
+import '../widgets/question.dart';
 import '../models/quiz_questions.dart';
 import './quiz.dart';
 import '../widgets/result.dart';
 
-class Quiz extends StatefulWidget {
+class QuizOTC extends StatefulWidget {
   static const routeName = '/quizscreen';
   @override
   State<StatefulWidget> createState() {
-    return _QuizState();
+    return _QuizOTCState();
   }
 }
 
-class _QuizState extends State<Quiz> {
-  List<Map<String, Object>> _questions = Questions;
+class _QuizOTCState extends State<QuizOTC> {
+  List<Map<String, Object>> _questions = Questions_OTCandPM;
   var _questionIndex = 0;
   var _totalScore = 0;
 
@@ -43,8 +43,6 @@ class _QuizState extends State<Quiz> {
 
   @override
   Widget build(BuildContext context) {
-    var questions = Questions; // does not work if questions is a const
-
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
