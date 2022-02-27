@@ -1,17 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_complete_guide/widgets/question.dart';
 import '../models/quiz_questions.dart';
 import './quiz.dart';
 import '../widgets/result.dart';
-// void main() {
-//   runApp(MyApp());
-// }
 
 class Quiz extends StatefulWidget {
   static const routeName = '/quizscreen';
   @override
   State<StatefulWidget> createState() {
-    // ignore: todo
-    // TODO: implement createState
     return _QuizState();
   }
 }
@@ -29,8 +25,8 @@ class _QuizState extends State<Quiz> {
   }
 
   void _answerQuestion(int score) {
-    // var aBool = true;
-    // aBool = false;
+    var aBool = true;
+    aBool = false;
 
     _totalScore += score;
 
@@ -47,11 +43,7 @@ class _QuizState extends State<Quiz> {
 
   @override
   Widget build(BuildContext context) {
-    // var dummy = const ['Hello'];
-    // dummy.add('Max');
-    // print(dummy);
-    // dummy = [];
-    // questions = []; // does not work if questions is a const
+    var questions = Questions; // does not work if questions is a const
 
     return MaterialApp(
       home: Scaffold(

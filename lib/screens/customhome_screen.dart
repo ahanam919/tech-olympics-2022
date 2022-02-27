@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'whydispcorrect.dart';
-import './otc_screen.dart';
 import './sharps_screen.dart';
-
+import './typesofmeds.dart';
 import 'whydispcorrect.dart';
 
 class CustomHomeScreen extends StatelessWidget {
@@ -46,7 +45,7 @@ class CustomHomeScreen extends StatelessWidget {
               ElevatedButton(
                   onPressed: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Otc()));
+                        MaterialPageRoute(builder: (context) => TypesofMeds()));
                   },
                   child: Text(
                     'Different Types of Medications',
