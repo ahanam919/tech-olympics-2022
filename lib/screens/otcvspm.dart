@@ -15,16 +15,15 @@ class _OTCvsPMState extends State<OTCvsPM> {
         appBar: AppBar(
           title: Text('About The Disposal Process'),
         ),
-        body: SingleChildScrollView ( child:Column(
-            children: <Widget>[
-              Image.asset('assets/images/OTCvsPMs.png'),
-             ElevatedButton(
+        body: SingleChildScrollView(
+            child: Column(children: <Widget>[
+          Image.asset('assets/images/OTCvsPMs.png'),
+          ElevatedButton(
               onPressed: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => QuizOTC()));
               },
-              child: Text("Quiz")),
+              child: Text("Test your knowledge!")),
         ])));
-
   }
 }

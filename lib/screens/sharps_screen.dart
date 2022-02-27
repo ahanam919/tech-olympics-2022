@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../screens/quiz_screen_sharps.dart';
 
 class AboutDispProcess extends StatelessWidget {
   static const routeName = '/nottodo';
@@ -13,12 +12,6 @@ class AboutDispProcess extends StatelessWidget {
         body: SingleChildScrollView(
             child: Column(children: <Widget>[
           Image.asset('assets/images/process.png'),
-          ElevatedButton(
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => QuizSharps()));
-              },
-              child: Text("Quiz")),
         ])));
   }
 }

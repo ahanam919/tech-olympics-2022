@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../screens/quiz_screen_sharps.dart';
 
 class SharpsDispP extends StatefulWidget {
   const SharpsDispP({Key? key}) : super(key: key);
@@ -14,12 +15,15 @@ class _SharpsDispPState extends State<SharpsDispP> {
         appBar: AppBar(
           title: Text('The Disposal Process of Sharps'),
         ),
-        body: SingleChildScrollView ( child:Column(
-            children: <Widget>[
-              Image.asset('assets/images/getSharpsReady.png')
-  
-            ]
-        )
-    ));
-}
+        body: SingleChildScrollView(
+            child: Column(children: <Widget>[
+          Image.asset('assets/images/getSharpsReady.png'),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => QuizSharps()));
+              },
+              child: Text("Test your Knowledge!")),
+        ])));
+  }
 }
