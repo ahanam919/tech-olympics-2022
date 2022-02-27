@@ -6,7 +6,7 @@ import './sharpsdispprocess.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-class Otc extends StatelessWidget {
+class TypesofMeds extends StatelessWidget {
   static const routeName = '/findpharm';
   // late WebViewController _controller;
   // String url =
