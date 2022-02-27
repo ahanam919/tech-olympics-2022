@@ -14,7 +14,8 @@ class AboutDispProcess extends StatelessWidget {
         appBar: AppBar(
           title: Text('About The Disposal Process'),
         ),
-        body: Column(children: <Widget>[
+        body: SingleChildScrollView(
+            child: Column(children: <Widget>[
           ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -22,6 +23,6 @@ class AboutDispProcess extends StatelessWidget {
               },
               child: Text("Quiz")),
           Image.asset('assets/images/process.png')
-        ]));
+        ])));
   }
 }
