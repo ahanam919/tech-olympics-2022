@@ -1,9 +1,5 @@
-import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'package:webview_flutter/webview_flutter.dart';
-import './quiz_screen.dart';
+import '../screens/quiz_screen_sharps.dart';
 
 class AboutDispProcess extends StatelessWidget {
   static const routeName = '/nottodo';
@@ -16,13 +12,13 @@ class AboutDispProcess extends StatelessWidget {
         ),
         body: SingleChildScrollView(
             child: Column(children: <Widget>[
+          Image.asset('assets/images/process.png'),
           ElevatedButton(
               onPressed: () {
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => Quiz()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => QuizSharps()));
               },
               child: Text("Quiz")),
-          Image.asset('assets/images/process.png')
         ])));
   }
 }

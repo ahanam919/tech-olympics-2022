@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import './screens/home_screen.dart';
-import './screens/quiz_screen.dart';
+import 'screens/quiz_screen_sharps.dart';
 import './screens/customhome_screen.dart';
 import 'screens/whydispcorrect.dart';
 import 'screens/typesofmeds.dart';
@@ -33,8 +33,7 @@ class _MyAppState extends State<MyApp> {
 
         WhyDispCorrect.routeName: (ctx) => WhyDispCorrect(),
         AboutDispProcess.routeName: (ctx) => AboutDispProcess(),
-        FindPharm.routeName: (ctx) => FindPharm(),
-        Quiz.routeName: (ctx) => Quiz()
+        FindPharm.routeName: (ctx) => FindPharm()
       },
       onGenerateRoute: (settings) {
         print(settings.arguments);

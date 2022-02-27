@@ -4,10 +4,6 @@ import 'package:flutter_complete_guide/screens/customhome_screen.dart';
 import 'package:flutter_complete_guide/widgets/main_drawer.dart';
 
 class HomeScreen extends StatefulWidget {
-  //final List<Meal> favoriteMeals;
-
-  // HomeScreen(this.favoriteMeals);
-
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
