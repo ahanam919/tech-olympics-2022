@@ -32,11 +32,12 @@ class TypesofMeds extends StatelessWidget {
         appBar: AppBar(
           title: Text("Different Types of Medications"),
         ),
-        body: Center(
+        body: SingleChildScrollView (child:Center(
             child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
+             SizedBox(height: 130, width: 40),
               ElevatedButton(
                   onPressed: () {
                     Navigator.push(context,
@@ -46,7 +47,7 @@ class TypesofMeds extends StatelessWidget {
                     'Sharps Disposal Process',
                     style: TextStyle(fontSize: 50),
                   )),
-              SizedBox(height: 30, width: 40),
+              SizedBox(height: 50, width: 40),
               ElevatedButton(
                   onPressed: () {
                     Navigator.push(context,
@@ -56,6 +57,6 @@ class TypesofMeds extends StatelessWidget {
                     'Over the Counter vs. Prescribed Meds',
                     style: TextStyle(fontSize: 50),
                   )),
-            ])));
+            ]))));
   }
 }

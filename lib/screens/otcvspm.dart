@@ -14,9 +14,9 @@ class _OTCvsPMState extends State<OTCvsPM> {
         appBar: AppBar(
           title: Text('About The Disposal Process'),
         ),
-        body: Column(
+        body: SingleChildScrollView ( child:Column(
             children: <Widget>[
               Image.asset('assets/images/OTCvsPMs.png')
-            ]));
+            ])));
   }
 }

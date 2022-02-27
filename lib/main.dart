@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-
-import '/screens/nottodo_screen.dart';
-import '/screens/generaltips_screen.dart';
-
 import './screens/home_screen.dart';
 import './screens/quiz_screen.dart';
 import './screens/customhome_screen.dart';
@@ -33,8 +29,6 @@ class _MyAppState extends State<MyApp> {
       routes: {
         '/': (ctx) =>
             HomeScreen(), //replace with HomeScreen() after firstintro is coded
-        NottoDo.routeName: (ctx) => NottoDo(),
-        GeneralTips.routeName: (ctx) => GeneralTips(),
         CustomHomeScreen.routeName: (ctx) => CustomHomeScreen(),
 
         WhyDispCorrect.routeName: (ctx) => WhyDispCorrect(),

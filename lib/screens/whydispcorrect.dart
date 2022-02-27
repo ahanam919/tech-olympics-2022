@@ -14,9 +14,9 @@ class WhyDispCorrect extends StatelessWidget {
         appBar: AppBar(
           title: Text('Why You Should Dispose Correctly'),
         ),
-        body: Column(
+        body: SingleChildScrollView ( child:Column(
             children: <Widget>[
               Image.asset('assets/images/MedDisp.png'),
-              Container(height: 750, child: Text('hello'))]));
+              Container(height: 750, child: Text('hello'))])));
   }
 }

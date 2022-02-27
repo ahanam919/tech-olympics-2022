@@ -14,12 +14,12 @@ class _SharpsDispPState extends State<SharpsDispP> {
         appBar: AppBar(
           title: Text('The Disposal Process of Sharps'),
         ),
-        body: Column(
+        body: SingleChildScrollView ( child:Column(
             children: <Widget>[
               Image.asset('assets/images/getSharpsReady.png')
   
             ]
         )
-    );
+    ));
 }
 }

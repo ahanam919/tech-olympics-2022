@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_complete_guide/screens/FindPharm_screen.dart';
 import 'package:flutter_complete_guide/screens/customhome_screen.dart';
 import 'package:flutter_complete_guide/widgets/main_drawer.dart';
-import 'generaltips_screen.dart';
-import '/screens/nottodo_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   //final List<Meal> favoriteMeals;
@@ -58,6 +56,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     'Learn',
                     style: TextStyle(fontSize: 40),
                   )),
+                  
               SizedBox(height: 50, width: 40)
             ])));
   }
